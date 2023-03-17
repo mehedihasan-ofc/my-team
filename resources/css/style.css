@@ -1,0 +1,122 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&family=Poppins:wght@400;600&display=swap');
+
+/* COMMON CSS */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 25px; */
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+.title {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 10px;
+}
+
+.who-we-are {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.description {
+    width: 75%;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.member-img {
+    width: 230px;
+}
+
+.member-name {
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.member-2,
+.member-5 {
+    position: relative;
+    top: 100px;
+}
+
+.intro {
+    display: flex;
+    gap: 10px;
+}
+
+.designation {
+    position: absolute;
+    transform-origin: top left;
+    transform: rotate(90deg);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Responsive Code Here */
+@media screen and (max-width: 576px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        grid-template-columns: 1fr;
+    }
+
+    .team-members {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .member-img {
+        width: 140px;
+    }
+
+    .member-name {
+        font-size: 14px;
+    }
+
+    .designation {
+        font-size: 10px;
+    }
+
+    .member-2,
+    .member-5 {
+        top: 0;
+    }
+
+    .member-2,
+    .member-4,
+    .member-6 {
+        position: relative;
+        top: 50px;
+    }
+}
